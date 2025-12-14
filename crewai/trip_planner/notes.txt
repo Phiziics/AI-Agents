@@ -1,0 +1,15 @@
+python --version; python -m pip --version; python -m pip install --user pipx; python -m pipx ensurepath; python -m pipx --version
+
+pipx --version
+# or, if PATH not yet picked up
+python -m pipx --version
+
+python -m pipx --version; python -m pipx install poetry
+
+python -m poetry --version
+
+python -m pipx run poetry lock
+python -m pipx run poetry install --no-root
+
+
+python -m pip freeze > requirements.txt
